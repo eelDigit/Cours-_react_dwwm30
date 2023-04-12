@@ -16,11 +16,6 @@ function App() {
     )
 }
 
-
-
-
-
-
 // ---------------------------------------------------
 // class App extends Component {
 //     render() {
