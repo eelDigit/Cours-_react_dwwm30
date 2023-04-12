@@ -67,11 +67,11 @@
 
 
         // autre méthode
-        const item = [];
+        const items = [];
         for (var i = 0; i < panierDeCourses.length; i++) {
-
-          item.push(
-            <li key={i} > {item.name} - {item.type || "non renseigné"}   </li>
+          const item = panierDeCourses[i];
+          items.push(
+            <li key={i} > {item.name} - {item.type || "non renseigné"} </li>
           );
         }
 
