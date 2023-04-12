@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>JSX</title>
+  <!-- Library -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  <!-- babel => compilation du JSX -->
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    .heading {
+      color: rgb(18, 15, 197);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // Création de composant en créant des classes
+    class Jsx extends React.Component {
+      render() {
+        const notes = [0, 4, 10, 20, 15];
+        console.log(notes);
+        const listItems = notes.map((note, index) =>
+          <li key={index} >{note}</li>);
+
+        const personne = {
+          firstname: "joe",
+          lastname: "Dalton",
+          age: 32,
+        };
+        const actionsList = (
+          <div>
+            <button>Modifier</button>
+            <button>Annuler</button>
+          </div>
+        );
+
+        return (
+          <div className="heading">
+            <h1>{this.props.message}</h1>
+            <p>{this.props.subtitle}</p>
+           
+              <p>Afficher le contenu du tableau notes sous forme de liste</p>
+              
+
+              <p>
+                Afficher le contenu de la constante personne sous la forme
+                personne.valeur
+              </p>
+              <p>Afficher le contenu de la constante actionsList</p>
+
+
+              // correction__________________
+             
+              <ul>
+                {listItems}
+              </ul>
+              // autre méthode
+              <ul> {notes.map((note, index) =>
+                <li key={index} >{note}</li>)} </ul>
+              
+                <p>
+                {personne.firstname} <br/>
+                {personne.lastname}<br/>
+                {personne.age}
+                  </p>
+
+                 {actionsList}
+            
+          </div>
+        );
+      }
+    }
+
+    // Rendu dans le DOM
+    ReactDOM.render(
+      <Jsx message="JSX" subtitle="Exo 2 " />,
+      document.getElementById("root")
+    );
+  </script>
+</body>
+
+</html>
