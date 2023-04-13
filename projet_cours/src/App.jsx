@@ -46,6 +46,19 @@ class App extends React.Component {
        ]
 
     } 
+
+
+//  bonjour() {
+//   console.log(this);
+// }
+ bonjour = (e) => {
+  // alert("Salut les amis !")
+  console.log(e.target);
+
+}
+
+
+
  
   render() { 
     return (
@@ -60,6 +73,9 @@ class App extends React.Component {
             />
              <Personne {...this.state.personnes[1]} />
              <Personne {...this.state.personnes[2]} />
+
+              <button onClick={ () => alert("salut") } > Anniv </button>
+              <button onClick={ this.bonjour } > Bonjour </button>
 
             </>
 
