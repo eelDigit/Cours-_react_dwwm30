@@ -1,13 +1,13 @@
 import React from "react";
 
-
+import title from "./title.css"
 
 
 const Title = () => {
   return (
 
       <>
-<h1>Cours REACT</h1>
+<h1  className="title"   >Cours REACT</h1>
 
   </>
       ) 
