@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
 import Personne from "./Personne";
-
-
+import Title from "./Title";
 
 
 
 function App() {
     return (
         <>
+          <Title />
           <Personne nom= "Joe" age="58" sex="Homme"/>
           <Personne nom= "Jacques" age= "45" sex="Homme"/>
           <Personne nom= "Rose" age="22" sex= "Femme" /> 

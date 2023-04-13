@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import AgePersonne from "./AgePersonne";
+
 
 // function Personne(props){
 //     return(
@@ -32,8 +34,13 @@ class Personne extends Component {
     render() {
         return (
             <>
+           
                 <h1> {this.props.nom} </h1>
-                <p>Age : {this.props.age} </p>
+                {/* <p>Age : {this.props.age} </p> */}
+
+                <AgePersonne age = {this.props.age} />
+
+
                 <p>Sex : {this.props.sex} </p>
             </>
 
