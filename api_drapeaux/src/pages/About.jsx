@@ -1,12 +1,7 @@
 import React from 'react';
-// import Navigation from '../components/Navigation';
 const About = () => {
     return (
         <>
-            {/* <Navigation /> */}
-            <h1>A propos</h1>
-
-
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi molestias eius adipisci assumenda,
                 reiciendis, voluptate veritatis rem fuga doloribus autem expedita odio. Numquam recusandae, nesciunt cum eveniet
                 blanditiis sunt laudantium ducimus dolor repellendus harum, vitae incidunt, nisi minus. Doloremque nostrum
