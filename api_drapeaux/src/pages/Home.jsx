@@ -1,11 +1,16 @@
 import React from 'react';
-// import Navigation from '../components/Navigation';
+import Countries from '../components/Countries';
+
+
 
 const Home = () => {
     return (
         <>
-        {/* <Navigation /> */}
+
+
             <h1>HOME</h1>
+
+            <Countries />
         </>
     );
 };
